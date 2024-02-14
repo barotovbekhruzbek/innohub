@@ -35,6 +35,7 @@
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 14%, 98%);
   --black: hsl(0, 0%, 0%);
+  --blue: #005050;
 
   /**
    * gradient color
@@ -189,8 +190,16 @@ body {
   background-image: var(--gradient);
   background-size: 1000%;
 }
+.bnt-blue {
+  background-image:var(--blue);
+  background-size: 1000%; 
+  
 
-.btn-primary:is(:hover, :focus) { background-position: bottom right; }
+}
+.bnt-blue button {
+  background-color:#005050;
+}
+.bnt-blue:is(:hover, :focus) { background-position: bottom right; }
 
 .btn-secondary {
   background-color: var(--white-1);
@@ -269,12 +278,8 @@ body {
   align-items: center;
 }
 
-.logo {
-  font-family: var(--ff-league-spartan);
-  color: var(--black);
-  font-size: 3.5rem;
-  font-weight: var(--fw-700);
-  line-height: 1;
+.logo img{
+   width: 140px;
 }
 
 .nav-toggle-btn { font-size: 40px; }
@@ -294,7 +299,7 @@ body {
   max-width: calc(100% - 30px);
   width: 100%;
   padding-inline: 0;
-  border: 1px solid var(--cultured);
+  border: 1px solid var(--blue);
   transition: 0.3s var(--cubic-out);
   max-height: 0;
   visibility: hidden;
@@ -325,7 +330,7 @@ body {
   transition: var(--transition-1);
 }
 
-.navbar-link:is(:hover, :focus) { color: var(--red-crayola); }
+.navbar-link:is(:hover, :focus) { color: #005050; }
 
 .header .btn { margin-block-start: 10px; }
 
@@ -345,12 +350,14 @@ body {
 .hero-content { margin-block-end: 30px; }
 
 .hero-subtitle {
-  color: var(--eerie-black);
-  font-size: var(--fs-5);
+  color: #005050;
+  font-size: 35px;
   font-weight: var(--fw-500);
 }
 
-.hero-title { margin-block: 12px 8px; }
+.hero-title { margin-block: 12px 8px; 
+  color: #005050;
+}
 
 .hero-text { font-size: var(--fs-5); }
 
@@ -358,10 +365,37 @@ body {
   margin-inline: auto;
   margin-block-start: 20px;
 }
+.xizmatlar {
+  float: right;
+}
+.xizmatlar  li{
+  padding-bottom: 15px;
+}
+@media (max-width:450px) {
+    .xz-carusel {
+      padding-top: 350px;
 
+    }
+    .xz-carusel .splide__slide img {
+      width: 350px;
+      height: 400px;
+    }
+}
+.xz-carusel .splide__slide img {
+  width: 450px;
+  height: 400px;
+}
+.hover-btn {
+color:black;
 
-
-
+}
+.hover-btn:hover {
+  border-radius: 8px;
+ color: white;
+  background-color: #005050;
+  transition: 0.3s;
+  
+}
 
 /*-----------------------------------*\
   #SERVICE
