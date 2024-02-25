@@ -12,10 +12,12 @@
   -->
 
   <link rel="stylesheet" href="assets/css/splide.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- 
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/media.css">
 
   <!-- 
     - google font link
@@ -33,6 +35,8 @@
     - #HEADER
   -->
 
+
+  
   <header class="header" data-header>
     <div class="container">
 
@@ -79,7 +83,7 @@
         <ion-icon name="menu-outline" class="open"></ion-icon>
         <ion-icon name="close-outline" class="close"></ion-icon>
       </button>
-
+      
     </div>
   </header>
 
@@ -94,16 +98,16 @@
         - #HERO
       -->
 
-      <section class="section hero" id="home" aria-label="hero">
+      <section class="section hero" id="home" aria-label="hero" data-aos="flip-left"  data-aos-duration="500">
         <div class="container">
 
-          <div class="hero-content">
+          <div class="hero-content" data-aos="flip-up"  data-aos-duration="1500">
 
 
 
             <p class="hero-text">
               <h1 class="hero-subtitle" style="color: #ccc;">KENG KO'LAMLI</h1>
-              <h1 class="hero-subtitle">PROFESSIONAL REKLAMA</h1>
+              <h1 class="hero-subtitle" style="color: rgb(6, 150, 151);">PROFESSIONAL REKLAMA</h1>
               <h1 class="hero-subtitle" style="color: #ccc;">XIZMATLARI</h1>
             </p>
             <p style="padding-top: 20px;"> Biz O`zbekiston bo`ylab barcha turdagi reklama xizmatlarini ko`rsatuvchi
@@ -111,50 +115,83 @@
               agentligi. Siz o`z ofisingizda bo'lgan holda tovar va xizmatlaringizning reklamasini
               istalgan joyga qulay narxlarda joylashtirishingiz mumkin
             </p>
-            <a href="#"> <button class="btn " style="background-color: #005050;">Bizga yozing</button></a>
+            <a href="#"> <button class="btn " style="background-color: rgb(6, 150, 151);">Bizga yozing</button></a>
 
           </div>
 
           <figure class="hero-banner">
-            <ul class="xizmatlar">
+             <div class="card-xz">
+               <a href="smm.html">
+                 <div class="logo-xizmat">
+                   <div class="logo-xiz">
+                     <img src="assets/images/icons/1.png" alt="" width="40px" height="40px">
+                   </div>
+                   <div class="xizmat-title">
+                     SMM
+                   </div>
+                 </div>
+               </a>
 
-              <li>
-                <a href="project.html" class=" hover-btn" data-nav-link><button
-                    style=" width: 300px; height: 45px; color: black;  border-radius: 8px;"
-                    onmouseover="this.style.color='#fff'" onMouseOut="this.style.color='black'">SMM </button></a>
-              </li>
-              <li>
-                <a href="project.html" class=" hover-btn" data-nav-link><button
-                    style=" width: 300px; height: 45px; color: black;  border-radius: 8px;"
-                    onmouseover="this.style.color='#fff'" onMouseOut="this.style.color='black'">TV REKLAMA</button></a>
-              </li>
-              <li>
-                <a href="project.html" class=" hover-btn" data-nav-link><button
-                    style=" width: 300px; height: 45px; color: black;  border-radius: 8px;"
-                    onmouseover="this.style.color='#fff'" onMouseOut="this.style.color='black'">INTERNET
-                    REKLAMA</button></a>
-              </li>
-              <li>
-                <a href="project.html" class=" hover-btn" data-nav-link><button
-                    style=" width: 300px; height: 45px; color: black;  border-radius: 8px;"
-                    onmouseover="this.style.color='#fff'" onMouseOut="this.style.color='black'">METRO VA
-                    TRANSPORTLARDA</button></a>
-              </li>
-              <li>
-                <a href="project.html" class=" hover-btn" data-nav-link><button
-                    style=" width: 300px; height: 45px; color: black;  border-radius: 8px;"
-                    onmouseover="this.style.color='#fff'" onMouseOut="this.style.color='black'">TASHQI
-                    REKLAMA</button></a>
-              </li>
-              <li>
-                <a href="project.html" class=" hover-btn" data-nav-link><button
-                    style=" width: 300px; height: 45px; color: black;  border-radius: 8px;"
-                    onmouseover="this.style.color='#fff'" onMouseOut="this.style.color='black'">DIZAYN VA
-                    POLIGRAFIYA</button></a>
-              </li>
+            <a href="tv.html">
+              <div class="logo-xizmat">
+                <div class="logo-xiz">
+                  <img src="assets/images/icons/2.png" alt="" width="49px" height="49px">
+                </div>
+                <div class="xizmat-title">
+                  Tv va Radio <br>
+                   reklama
+                </div>
+              </div>
+            </a>
 
 
-            </ul>
+               <a href="tashqireklama.html">
+
+                 <div class="logo-xizmat">
+                   <div class="logo-xiz">
+                     <img src="assets/images/icons/3.png" alt="" width="49px" height="49px">
+                   </div>
+                   <div class="xizmat-title">
+                     Tashqi reklama
+                   </div>
+                 </div>
+               </a>
+
+
+               <a href="smm.html">
+                 <div class="logo-xizmat">
+                   <div class="logo-xiz">
+                     <img src="assets/images/icons/4.png" alt="" width="49px" height="49px">
+                   </div>
+                   <div class="xizmat-title">
+                     Internet tarmoqlarida
+                   </div>
+                 </div>
+               </a>
+
+               <a href="metroda.html">
+                 <div class="logo-xizmat">
+                   <div class="logo-xiz">
+                     <img src="assets/images/icons/5.png" alt="" width="49px" height="49px">
+                   </div>
+                   <div class="xizmat-title">
+                     Metroda reklama
+                   </div>
+                 </div>
+               </a>
+
+               <a href="poligrafiya.html">
+                 <div class="logo-xizmat">
+                   <div class="logo-xiz">
+                     <img src="assets/images/icons/6.png" alt="" width="49px" height="49px">
+                   </div>
+                   <div class="xizmat-title">
+                     Poligrafiya
+                   </div>
+                 </div>
+               </a>
+
+             </div>
           </figure>
 
         </div>
@@ -162,25 +199,25 @@
 
 
       <section class="section ximat-carusel">
-        
-          <div class="xz-carusel">
-            <section class="splide" aria-labelledby="carousel-heading">
-              <h2 id="carousel-heading"></h2>
+
+        <div class="xz-carusel">
+          <section class="splide" aria-labelledby="carousel-heading">
+            <h2 id="carousel-heading"></h2>
 
 
-              <div class="splide__track">
-                <ul class="splide__list">
-                  <li class="splide__slide"><img src="assets/images/tashqi_reklama.jpeg" alt=""></li>
-                  <li class="splide__slide"><img src="assets/images/metro.jpg" alt=""></li>
-                  <li class="splide__slide"><img src="assets/images/smm.jpg" alt=""></li>
-                  <li class="splide__slide"><img src="assets/images/tv.jpg" alt=""></li>
-                  <li class="splide__slide"><img src="assets/images/internet.jpg" alt=""></li>
-                  <li class="splide__slide"><img src="assets/images/transport.jpg" alt=""></li>
-                </ul>
-              </div>
-            </section>
-          </div>
-       
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide"><img src="assets/images/tashqi_reklama.jpeg" alt=""></li>
+                <li class="splide__slide"><img src="assets/images/metro.jpg" alt=""></li>
+                <li class="splide__slide"><img src="assets/images/smm.jpg" alt=""></li>
+                <li class="splide__slide"><img src="assets/images/tv.jpg" alt=""></li>
+                <li class="splide__slide"><img src="assets/images/internet.jpg" alt=""></li>
+                <li class="splide__slide"><img src="assets/images/transport.jpg" alt=""></li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
       </section>
 
 
@@ -191,37 +228,15 @@
       <section class="section service" id="service" aria-label="service">
         <div class="container">
 
-          <h2 class="h2 section-title" style="padding-bottom: 20px;">Xizmatlar</h2>
+          <h2 class="h2 section-title" style="padding-bottom: 40px;">Xizmatlar</h2>
 
 
 
-          <ul class="grid-list">
-
+          <ul class="grid-list1">
             <li>
-              <div class="service-card">
+              <div class="service-card" data-aos="fade-up"  data-aos-duration="500">
 
-                <div class="card-icon" style="background-color: #13c4a1">
-                  <ion-icon name="tv-outline"></ion-icon>
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">TV va Radio reklama</a>
-                </h3>
-
-                <p class="card-text">
-                  Televizion reklama – Sizning tovar va xizmatlaringiz malakali videotasvirchilar,
-                  mobilograflartomonidan yuqori darajada tasvirga olinadi va O`zbekiston bo`yicha barcha telekanallarda
-                  sizning reklamangizni joylashtiriladi.O‘zbekiston, Yoshlar, Zor TV, Milliy TV, Sevimli, Mening yurtim,
-                  Kinoteatr hamda xorij telakanallari va boshqalar.
-                </p>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon" style="background-color: #6610f2">
+                <div class="card-icon" style="background-color: rgb(6, 150, 151)">
                   <ion-icon name="desktop"></ion-icon>
                 </div>
 
@@ -240,9 +255,33 @@
             </li>
 
             <li>
-              <div class="service-card">
+              <div class="service-card" data-aos="fade-up"  data-aos-duration="500">
 
-                <div class="card-icon" style="background-color: #ffb700">
+                <div class="card-icon" style="background-color: rgb(6, 150, 151)">
+                  <!-- <ion-icon name="tv-outline"></ion-icon> -->
+                  <img src="assets/images/icons/10.svg" alt="">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">TV va Radio reklama</a>
+                </h3>
+
+                <p class="card-text">
+                  Televizion reklama – Sizning tovar va xizmatlaringiz malakali videotasvirchilar,
+                  mobilograflartomonidan yuqori darajada tasvirga olinadi va O`zbekiston bo`yicha barcha telekanallarda
+                  sizning reklamangizni joylashtiriladi.O‘zbekiston, Yoshlar, Zor TV, Milliy TV, Sevimli, Mening yurtim,
+                  Kinoteatr hamda xorij telakanallari va boshqalar.
+                </p>
+
+              </div>
+            </li>
+
+         
+
+            <li>
+              <div class="service-card" data-aos="fade-up"  data-aos-duration="1000">
+
+                <div class="card-icon" style="background-color: rgb(6, 150, 151)">
                   <ion-icon name="bulb"></ion-icon>
                 </div>
 
@@ -260,9 +299,9 @@
             </li>
 
             <li>
-              <div class="service-card">
+              <div class="service-card" data-aos="fade-up"  data-aos-duration="1000">
 
-                <div class="card-icon" style="background-color: #fc3549">
+                <div class="card-icon" style="background-color: rgb(6, 150, 151)">
                   <ion-icon name="globe-outline"></ion-icon>
                 </div>
 
@@ -282,9 +321,9 @@
             </li>
 
             <li>
-              <div class="service-card">
+              <div class="service-card"data-aos="fade-up"  data-aos-duration="1500">
 
-                <div class="card-icon" style="background-color: #00d280">
+                <div class="card-icon" style="background-color: rgb(6, 150, 151)">
                   <ion-icon name="bus-outline"></ion-icon>
                 </div>
 
@@ -303,9 +342,9 @@
             </li>
 
             <li>
-              <div class="service-card">
+              <div class="service-card" data-aos="fade-up"  data-aos-duration="1500">
 
-                <div class="card-icon" style="background-color: #ff612f">
+                <div class="card-icon" style="background-color: rgb(6, 150, 151)">
                   <ion-icon name="pencil-outline"></ion-icon>
                 </div>
 
@@ -336,36 +375,15 @@
         - #PROJECT
       -->
 
-      <section class="section project" id="project" aria-label="project">
+      <section class="section project" id="project" aria-label="project" data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="500">
         <div class="container">
 
           <h2 class="h2 section-title" style="padding-bottom: 35px;">Bizning ishlar</h2>
 
 
           <ul class="grid-list">
-
-            <li>
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 510; --height: 700;">
-                  <img src="Tashqi reklama/photo_2023-12-18_12-14-15.jpg" width="510" height="700" loading="lazy"
-                    alt="Designing a better cinema experience" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Tashqi reklama</a>
-                  </h3>
-
-                  <a href="project.html" class="btn btn-primary">Batafsil</a>
-
-                </div>
-
-              </div>
-            </li>
 
             <li>
               <div class="project-card">
@@ -383,12 +401,37 @@
                     <a href="#" class="card-title">Tashqi reklama</a>
                   </h3>
 
-                  <a href="project.html" class="btn btn-primary">Batafsil</a>
+                  <a href="project.html" class="btn" style="background-color: #005050;">Batafsil</a>
 
                 </div>
 
               </div>
             </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 510; --height: 700;">
+                  <img src="Tashqi reklama/photo_2023-12-18_12-14-15.jpg" width="510" height="700" loading="lazy"
+                    alt="Designing a better cinema experience" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Tashqi reklama</a>
+                  </h3>
+
+                  <a href="project.html" class="btn" style="background-color: #005050;">Batafsil</a>
+
+                </div>
+
+              </div>
+            </li>
+
+         
 
             <li>
               <div class="project-card">
@@ -406,7 +449,7 @@
                     <a href="#" class="card-title">Tashqi reklama</a>
                   </h3>
 
-                  <a href="project.html" class="btn btn-primary">Batafsil</a>
+                  <a href="project.html" class="btn" style="background-color: #005050;">Batafsil</a>
 
                 </div>
 
@@ -429,7 +472,7 @@
                     <a href="#" class="card-title">Tashqi reklama</a>
                   </h3>
 
-                  <a href="project.html" class="btn btn-primary">Batafsil</a>
+                  <a href="project.html" class="btn" style="background-color: #005050;">Batafsil</a>
 
                 </div>
 
@@ -452,7 +495,7 @@
                     <a href="#" class="card-title">Grafik dizayn</a>
                   </h3>
 
-                  <a href="project.html" class="btn btn-primary">Batafsil</a>
+                  <a href="project.html" class="btn" style="background-color: #005050;">Batafsil</a>
 
                 </div>
 
@@ -474,7 +517,7 @@
                     <a href="#" class="card-title">Grafik Dizayn</a>
                   </h3>
 
-                  <a href="project.html" class="btn btn-primary">Batafsil</a>
+                  <a href="project.html" class="btn" style="background-color: #005050;">Batafsil</a>
 
                 </div>
 
@@ -638,7 +681,27 @@
 
               </div>
             </li>
+            <li class="contact-item">
+            <a href="https://t.me/jaguar4a">
+              <div class="contact-card">
 
+                <div class="card-icon">
+                  <ion-icon name="logo-wechat"></ion-icon>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Telegram</h3>
+
+                  <a href="https://t.me/jaguar4a" class="card-link">@jaguar4a</a>
+                  <a href="tel:+1234567890" class="card-link">.</a>
+
+
+                </div>
+
+              </div>
+            </a>
+            </li>
           </ul>
 
         </div>
@@ -688,6 +751,7 @@
   <script src="./assets/js/script.js" defer></script>
 
   <script src="assets/js/splide.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -698,23 +762,28 @@
         breakpoints: {
           1750: {
             perPage: 3,
-            gap:0
+            gap: 0
           },
-          750: {
+          990: {
             perPage: 2,
-            gap: 400
+            gap: 0
           },
           640: {
             perPage: 2,
-            gap: 400
+            gap: 10
+          },
+          600: {
+            perPage: 1
           },
           400: {
-            perPage: 1
+
           }
         }
       });
       splide.mount();
     });
+
+    AOS.init();
   </script>
   <!-- 
     - ionicon link
